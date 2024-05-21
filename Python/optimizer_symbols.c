@@ -298,8 +298,8 @@ _Py_uop_sym_matches_type(_Py_UopsSymbol *sym, PyTypeObject *typ)
 bool
 _Py_uop_sym_matches_type_version(_Py_UopsSymbol *sym, int32_t version, int offset)
 {
-    return _Py_uop_sym_get_type_version(sym) == version
-        && _Py_uop_sym_get_type_version_offset(sym) > offset;
+    return _Py_uop_sym_get_type_version(sym) == version;
+        // && _Py_uop_sym_g et_type_version_offset(sym) > offset;
 }
 
 
